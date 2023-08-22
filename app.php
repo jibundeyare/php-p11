@@ -1,9 +1,9 @@
 <?php
 
 require __DIR__.'/src/Personnage.php';
-// la classe Monstre dépend de classe Personnage
+// la classe Monstre dépend de la classe Personnage
 require __DIR__.'/src/Monstre.php';
-// la classe Hero dépend de classe Personnage
+// la classe Hero dépend de la classe Personnage
 require __DIR__.'/src/Hero.php';
 // la classe Combat est composée des classes Monstre et Hero
 require __DIR__.'/src/Combat.php';
