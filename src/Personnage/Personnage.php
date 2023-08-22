@@ -1,6 +1,9 @@
-<?php
+<?php declare(strict_types = 1);
 
-class Personnage
+namespace App\Personnage;
+
+// le mot clé "abstract" empêche que la classe soit instanciée directement
+abstract class Personnage
 {
     protected $vie = 100;
     protected $puissance = 0;
