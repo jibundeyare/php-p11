@@ -11,7 +11,7 @@ use App\Personnage\Personnage;
 // la classe Vampire dépend de la classe Personnage
 use App\Personnage\Vampire;
 
-require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/../vendor/autoload.php';
 
 // Attention : la classe Personnage est une classe abstraite, elle ne peut pas être instanciée directement
 // PHP Fatal error:  Uncaught Error: Cannot instantiate abstract class
