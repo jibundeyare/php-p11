@@ -2,6 +2,7 @@
 
 // la classe Combat est composée des classes Monstre et Hero
 use App\Combat\Combat;
+use App\Decor\Arbre;
 // la classe Hero dépend de la classe Personnage
 use App\Personnage\Hero;
 // la classe Monstre dépend de la classe Personnage
@@ -19,6 +20,10 @@ require __DIR__.'/vendor/autoload.php';
 //     ->crier()
 // ;
 
+$a = new Arbre();
+$a->setCri('JE S\'APPELLE GROOT !!!')
+    ->crier()
+;
 
 $m = new Monstre();
 $m->crier();
