@@ -4,12 +4,12 @@ session_start();
 
 /*
 // ceci fait la même chose que le if (($_SESSION['auth'] ?? false) == false)
-if (!isset($_SESSION['auth']) || $_SESSION['auth'] == false) {
+if (!isset($_SESSION['auth']) || $_SESSION['auth'] != true) {
     // l'utilisateur n'est pas authentifié
 }
 */
 
-if (($_SESSION['auth'] ?? false) == false) {
+if (($_SESSION['auth'] ?? null) != true) {
     // l'utilisateur n'est pas authentifié
     // on le renvoie à la page de login
     header('Location: login.php', true, 302);

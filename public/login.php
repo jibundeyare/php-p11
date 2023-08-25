@@ -12,10 +12,6 @@ if (($_POST['password'] ?? '') === '123') {
     // on redirige l'utilisateur vers la page privée
     header('Location: private-page.php', true, 302);
     exit();
-} else {
-    // l'utilisateur n'a pas renseigné le bon mot de passe
-    // il n'est pas authentifié
-    $_SESSION['auth'] = false;
 }
 
 ?><!DOCTYPE html>
